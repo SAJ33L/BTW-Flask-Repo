@@ -7,6 +7,16 @@
     <title>Flask App</title>
 </head>
 <body>
-    <form action="/result" method="POST"></form>
+    <form action="/result" method="POST">
+<center>
+{% if name %}
+<h3 style="color: blue;">Hello {{name}}, how are you!!</h3>
+{% endif%}
+</center>
+
+<label for = "Name">Your name: </label>
+<input type="Text" name="name">
+<input type="Submit" name="name" class = "file_submit">
+    </form>
 </body>
 </html>
