@@ -5,18 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
-</head>
-<body>
-    <form action="/result" method="POST">
-<center>
-{% if name %}
-<h3 style="color: blue;">Hello {{name}}, how are you!!</h3>
-{% endif%}
-</center>
 
-<label for = "Name">Your name: </label>
-<input type="Text" name="name">
-<input type="Submit" name="name" class = "file_submit">
-    </form>
+    <style>
+    
+       h3{
+            color: blue;
+        }
+
+        .coverImage {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+        }
+        .data {
+          position: relative;
+          top: 160px;
+          left: 30%;
+          border: 3px solid silver;
+          height: 100%;
+          width: 40%;
+          background-color: #ECEFD3;
+        }
+        </style>
+</head>
+<body >
+    <div class="coverImage">
+        <img src="/static/images/Frame 19.png" alt="" width="100%" height="100%">
+    </div>
+    <div class="data">
+        <center>
+            <h3>Please Fill your Form</h3>
+        </center>
+
+        <form class="mainForm" action="/result" method="POST">
+            
+            <label for = "Name">Your name: </label>
+            <input type="Text" name="name"><br>
+            <label for = "Age">Your age: </label>
+            <input type="Text" name="age"><br>
+            <label for = "City">Your City: </label>
+            <input type="Text" name="city">
+            <br>
+            <hr>
+            <fieldset>
+                <legend>
+                    Education
+                </legend>
+                <label for = "Matric">Matriculation: </label>
+                <input type="Text" name="school">
+                <label for = "Matric">Session: </label>
+                <input type="Text" name="session_one"><br>
+                <label for = "College">College: </label>
+                <input type="Text" name="college">
+                <label for = "College">Session: </label>
+                <input type="Text" name="session_two"><br>
+                <label for = "University">University: </label>
+                <input type="Text" name="university">
+                <label for = "University">Session: </label>
+                <input type="Text" name="session_three">            
+            </fieldset>
+            <br>
+            <hr>
+            <input type="Submit" name="name" class = "file_submit">
+            <br>
+
+        </form>
+    </div>
 </body>
 </html>

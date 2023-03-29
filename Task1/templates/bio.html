@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <style>
+
+        h3{
+            color: blue;
+        }
+        .coverImage {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+        }
+        .data {
+          position: relative;
+          top: 160px;
+          left: 30%;
+          border: 3px solid silver;
+          height: 100%;
+          width: 40%;
+          background-color: #ECEFD3;
+        }
+        </style>
+
+</head>
+<body background="../static/images/Pen.jpeg">
+    <div class="coverImage">
+        <img src="/static/images/Frame 19.png" alt="" width="100%" height="100%">
+    </div>
+    <div class="data">
+        <center>
+            <h1>
+                <em> Peronal Biography </em>
+            </h1>
+        </center>
+        <hr>
+        <center>
+        {% if name %}
+        <h3>Hi!! My name is {{name}}, how are you!!</h3>
+        <p>
+            My age is {{age}}  and I'm from  {{city}}
+        </p>
+        {% endif%}
+        </center>
+        <hr>
+        <fieldset>
+            <legend>Education</legend>
+            <center>
+                <table>
+                    <thead>
+                        <th>
+                            Institute
+                        </th>
+                        <th>
+                            Year of Passing
+                        </th>
+                        <thead>
+                            Passing Year
+                        </th>
+                    </thead>
+                    <th></th>
+                    <tbody>
+                        
+                        <tr>
+                            <td>{{school}}</td>
+                            <td>{{session_one}}</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>{{college}}</td>
+                            <td>{{session_two}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{university}}</td>
+                            <td>{{session_three}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </center>
+    </div>
+</body>
+</html>
