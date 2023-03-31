@@ -1,0 +1,54 @@
+
+h3{
+     color: blue;
+ }
+
+ .coverImage {
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 100%;
+ height: 150px;
+ }
+ .data {
+   position: relative;
+   top: 50px;
+   left: 30%;
+   border: 3px solid silver;
+   height: 100%;
+   width: 40%;
+   background-color: #EBEDF0;
+   border-radius: 5px;
+   
+ }
+ .mainForm{
+    padding-left: 20px;
+ }
+ .input{
+    width: 415px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border: none; 
+}
+.text{
+    font-family: initial;
+    font-size: larger;
+}
+.input_education{
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+h2{
+    font-family: initial;
+
+}
+.btn-success{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.lbl-edu{
+    margin-top: 8px;
+}
