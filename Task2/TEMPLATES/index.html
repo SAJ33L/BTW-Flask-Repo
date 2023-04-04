@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Flask App</title>
+
+
+</head>
+
+<body>
+     <div class="coverImage">
+        <img src="Frame 19.png" alt="" width="100%" height="100%">
+    </div>
+    <div class="data">
+        <center>
+            <h3>Please Fill your Form</h3>
+        </center>
+<br>
+        <form class="mainForm" action="/result" method="POST">
+
+            <label class="text" for="Name">Name: </label><br>
+            <input class="input" type="Text" name="name" ><br>
+            <label class="text" for="City">City: </label><br>
+            <input class="input" type="Text" name="city">
+            <br>
+            <hr>
+            <!-- <input type="Submit" name="name" class="file_submit"> -->
+            <a href="#"><button class="btn btn-success px-4">Submit</button></a>
+            <br>
+        </form>
+    </div>
+
+    {% if nme && shehr %}
+    <div class="data">
+        <center>
+            <h1>
+                <em> The Data </em>
+            </h1>
+        </center>
+        <hr>
+        <center>
+        
+        <h3>Hi!! My name is {{name}}, how are you!!</h3>
+        <h3>
+            My city is {{shehr}} 
+        </h3>
+
+    </div>
+    {% endif %}
+
+</body>
+
+</html>
