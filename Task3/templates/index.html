@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action=""  method="POST">
+    <label class="text" for="city">City: </label><br>
+    <input class="input" type="Text" name="city" ><br><br>
+    <input type="Submit" name="name" class="file_submit">
+</form>
+
+{% if temp and min_temp and max_temp and hum %}
+<p>
+    the temperature is {{temp}}℃ and max temperature is {{max_temp}}℃ and min temperature is {{min_temp}}℃ and humidity is {{hum}}%
+</p>
+{% endif %}
+{% endblock %}
