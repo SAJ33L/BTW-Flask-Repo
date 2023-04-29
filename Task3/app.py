@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods = ["GET", "POST"])
 def home():
     if request.method == 'POST':
-        api_key = ''
+        api_key = '039b8b4d8c1cfc6a3d1d1a97e5a9f7fc'
         city_name = request.form.get('city')
         print(city_name)
         url = "https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid="+api_key
