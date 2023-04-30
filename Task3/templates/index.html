@@ -1,21 +1,38 @@
-<!-- #8739f9 -->
+{% extends 'base.html' %} 
+{% block content %}
+<div class="container">
+  <form class="search-section" action="" method="POST">
+    <input class="input" type="Text" name="city" placeholder="Enter the city" autofocus />
+    <button type="submit" class="file_submit">Check</button>
+  </form>
 
-{% extends 'base.html' %} {% block content %}
-<form class="search-section" action="" method="POST">
-  <input
-    class="input"
-    type="Text"
-    name="city"
-    placeholder="Enter the city"
-    autofocus
-  />
- <!-- <input type="Submit" name="name" class="file_submit" />-->
-  <button type="submit" class="file_submit">Check</button>
-</form>
+  {% if temp and min_temp and max_temp and hum %}
+  <div class="result-section">
+    <p> The current temperature is {{temp}}℃</p>
+    <p> Max temperature is {{max_temp}}℃</p>
+    <p> Min temperature is {{min_temp}}℃</p>
+    <p> Humidity is {{hum}}%</p>
+  </div>
+  {% endif %}
+</div>
 
-{% if temp and min_temp and max_temp and hum %}
-<p class="result">
-  The temperature is {{temp}}℃ and max temperature is {{max_temp}}℃ and min
-  temperature is {{min_temp}}℃ and humidity is {{hum}}%.
-</p>
-{% endif %} {% endblock %}
+<style>
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .result-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  p {
+    color: white;
+    margin: 5px;
+  }
+</style>
+{% endblock %}
