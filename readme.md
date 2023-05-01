@@ -6,4 +6,5 @@ This repo is for the bytewise Fellowship. It will be containing al the projects 
     Realted Documentation == "https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application"
    
    
-*Task3/Week3 Create a weather app that get information about person location and display the weather information using any opensource weather api*
+*Task3/Week3 Create a weather app that get information about person location and display the weather information using any opensource weather api* 
+    Related Documentation == "https://dev.to/cscarpitta/creating-a-simple-weather-app-with-python-and-flask-5bpd"
