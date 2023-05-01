@@ -11,8 +11,9 @@ def home():
     # Check if request is POST
     if request.method == 'POST':
         # Get API key
-        api_key = os.environ.get('API_KEY')
-        # Get city name from form
+        api_key = '039b8b4d8c1cfc6a3d1d1a97e5a9f7fc'
+        print(api_key)
+        # Get city name from form also passing the api_key
         city_name = request.form.get('city')
         # Create url for API request
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&units=metric&appid={api_key}"

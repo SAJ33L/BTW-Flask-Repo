@@ -1,17 +1,18 @@
 /* Style for form input and submit button */
 /* #37b9f1 #f2f5f5 */
 /* text: #565360 #908e9b #e1dfe9 */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%)
-    fixed;
-  font-family: sans-serif;
-  box-sizing: border-box;
 
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
 }
+
+/* h1 {
+  margin-top: 50px;
+  font-size: 48px;
+} */
+
 .search-section {
   display: flex;
   justify-content: center;
@@ -21,6 +22,18 @@ body {
   color: #b5b2be;
   font-size: 18px;
 }
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px #d9d9d9;
+}
+
+
+
 .input {
   width: 400px;
   height: 50px;
@@ -36,16 +49,6 @@ body {
   color: #383434;
   opacity: 1;
 }
-.file_submit {
-  background-color: #37b9f1;
-  height: 50px;
-  color: #1b1b1d;
-  margin: 5px 10px auto 10px;
-  padding: 10px 20px;
-  border: none;
-  font-size: 18px;
-  transition: all 0.25s ease-in-out;
-}
 .file_submit:hover {
   background-color: #134155;
   color: #fff;
@@ -56,4 +59,15 @@ p {
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #d9d9d9;
+  cursor: pointer;
 }
